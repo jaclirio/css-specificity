@@ -1,0 +1,27 @@
+/*0,0,0,1*/
+h1{
+    color: blue;
+}
+
+/*0,0,1,0*/
+.header{ /* class takes priority over element h1 */
+    color: red;
+}
+
+.header2{ /* header2 takes priority over header */
+    color: grey !important; /* 1,0,0,0,0 */
+}
+
+/*0,1,0,0*/
+#header-id{ /* ID takes priority over class */
+    color: black; 
+}
+
+/* 0,0,1,1 */
+h1.header{
+    color: pink;
+}
+
+.text{
+    color: green;
+}
